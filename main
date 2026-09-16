@@ -1,0 +1,10 @@
+from paciente import Paciente 
+
+def main():
+    # Crear paciente con el consrtructor 
+    p1 = Paciente("11.111.111-1", "Luis Arriagada", 48, "Isapre")
+    # Mostrar la informacion del paciente
+    print(p1)
+
+if __name__ == "__main__":
+    main()
