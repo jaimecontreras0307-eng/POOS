@@ -1,2 +1,0 @@
-# POOS
-actividades POOS
