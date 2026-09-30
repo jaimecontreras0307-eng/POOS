@@ -13,8 +13,11 @@ def agregar_paciente() -> None:
         prevision = "Fonasa"
     else :
         prevision == "Isapre"
-
-    paciente = Paciente(rut, nombre, edad, prevision)
+    try:
+        paciente = Paciente(rut, nombre, edad, prevision)
+    except (ValueError, TypeError) as e:
+        print(f"Error al crear al paciente: {e}")
+        return
     pacientes.append(paciente)
     print("Paciente agregado exitosamente.")
 
